@@ -1,7 +1,8 @@
-version:'3'
-
+version: "3.8"
 services:
-	web:
-		build: ./flask
-		ports:
-			- "5000:5000"
+  flask:
+    build:
+      context: ./flask
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
